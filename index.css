@@ -27,6 +27,38 @@
 }
 
 body {
-    font-family: "Inter", serif;
+    font-family: "Inter", sans-serif;
     background-color: var(--Off-white);
+    padding: 4rem 9rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.logo {
+    align-self: flex-end;
+}
+
+.tabs {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-item {
+    padding-left: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    color: var(--Soft-orange);
 }
