@@ -30,19 +30,21 @@ body {
     font-family: "Inter", sans-serif;
     background-color: var(--Off-white);
     padding: 4rem 9rem;
+    width: 100vw;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    height: 50px;
+    margin-bottom: 3rem;
 }
 
 .logo {
     align-self: flex-end;
 }
 
-.tabs {
+.nav-container {
     list-style: none;
     display: flex;
     align-items: flex-end;
@@ -61,4 +63,44 @@ body {
 
 .nav-link:hover {
     color: var(--Soft-orange);
+}
+
+/* bar will be hidden in desktop view */
+
+.bar {
+    display: none;
+    width: 55px;
+    height: 20px;
+}
+
+
+
+
+/* This will be for the menu bar */
+
+@media screen and (max-width:450px) {
+    body {
+        padding: 1.5rem 1rem;
+    }
+
+    .logo {
+        width: 60px;
+        height: 40px;
+    }
+
+    .nav-container {
+        position: absolute;
+        width: 70%;
+        opacity: 0;
+        background-color: var(--Off-white);
+
+    }
+
+    .nav-container.active {}
+
+    .bar {
+        display: block;
+        align-self: center;
+        cursor: pointer;
+    }
 }
