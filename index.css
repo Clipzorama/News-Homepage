@@ -39,6 +39,7 @@ body {
     justify-content: space-between;
     height: 50px;
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 .logo {
@@ -110,7 +111,7 @@ body {
     }
 
     .nav-list {
-        margin-top: 20rem;
+        margin-top: 17rem;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
@@ -131,6 +132,8 @@ body {
         display: block;
         align-self: center;
         cursor: pointer;
+        transition: 0.5s ease;
+
     }
 
     .close-bar {
@@ -141,6 +144,8 @@ body {
         align-self: flex-end;
         margin-right: 1rem;
         z-index: 2;
+        transition: 0.5s ease;
+
     }
 }
 
