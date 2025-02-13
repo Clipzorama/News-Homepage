@@ -30,7 +30,8 @@ body {
     font-family: "Inter", sans-serif;
     background-color: var(--Off-white);
     padding: 4rem 9rem;
-    width: 100vw;
+    min-height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .navbar {
@@ -45,9 +46,14 @@ body {
 }
 
 .nav-container {
+    display: flex;
+}
+
+.nav-list {
     list-style: none;
     display: flex;
     align-items: flex-end;
+    height: 50px;
 }
 
 .nav-item {
@@ -65,6 +71,10 @@ body {
     color: var(--Soft-orange);
 }
 
+.close-bar {
+    display: none;
+}
+
 /* bar will be hidden in desktop view */
 
 .bar {
@@ -72,8 +82,6 @@ body {
     width: 55px;
     height: 20px;
 }
-
-
 
 
 /* This will be for the menu bar */
@@ -90,17 +98,52 @@ body {
 
     .nav-container {
         position: absolute;
-        width: 70%;
-        opacity: 0;
+        width: 65%;
         background-color: var(--Off-white);
+        height: 100%;
+        right: -1000px;
+        top: 0;
+        z-index: 2;
+        opacity: 1;
+        transition: 0.5s all ease;
 
     }
 
-    .nav-container.active {}
+    .nav-list {
+        margin-top: 20rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1.8rem;
+
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .nav-container.active {
+        right: 0;
+        top: 0;
+    }
 
     .bar {
         display: block;
         align-self: center;
         cursor: pointer;
     }
+
+    .close-bar {
+        display: block;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        align-self: flex-end;
+        margin-right: 1rem;
+        z-index: 2;
+    }
+}
+
+.hidden {
+    display: none;
 }
