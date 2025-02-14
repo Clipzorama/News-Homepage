@@ -85,6 +85,48 @@ body {
 }
 
 
+
+/* Grid Layout For Main Container */
+
+.main-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Should be all of the layout for the divs. Now i must adjust the rows and columns */
+.main-pic {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.future {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+/* flex-direction column */
+.info-more {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.new-info {
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+/* display flex and inner div is column for these 3 */
+.retro {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.laptops {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.game {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+
 /* This will be for the menu bar */
 
 @media screen and (max-width:450px) {
