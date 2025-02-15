@@ -92,15 +92,21 @@ body {
 .main-container {
     width: 100%;
     display: grid;
-    grid-template-rows: 350px 1fr 1fr;
-    grid-template-columns: 200px 295px 300px;
+    grid-template-rows: 350px 250px 250px;
+    grid-template-columns: 350px 440px 305px;
     gap: 1.7rem;
+}
+
+.main-container>h1 {
+    font-size: 4.2rem;
+    font-weight: 800;
+    line-height: 4rem;
 }
 
 /* Should be all of the layout for the divs. Now i must adjust the rows and columns */
 .main-pic {
     width: 100%;
-    grid-area: 1 / 1 / 2 / 4;
+    grid-area: 1 / 1 / 2 / 3;
     height: 100%;
 }
 
@@ -115,7 +121,7 @@ body {
 
 .new-info {
     width: 100%;
-    grid-area: 1 / 4 / 3 / 5;
+    grid-area: 1 / 3 / 3 / 4;
     background-color: var(--Dark-grayish-blue);
 }
 
