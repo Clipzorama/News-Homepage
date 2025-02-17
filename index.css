@@ -90,7 +90,7 @@ body {
 .main-container {
     width: 100%;
     display: grid;
-    grid-template-rows: 310px 160px 50px 250px;
+    grid-template-rows: 310px 160px 20px 250px;
     grid-template-columns: 350px 380px auto;
     gap: 1.7rem;
 }
@@ -173,6 +173,8 @@ body {
 .new-info>p {
     color: var(--Dark-grayish-blue);
     margin-bottom: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
 }
 
 .new-info>hr {
