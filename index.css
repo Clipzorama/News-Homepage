@@ -29,8 +29,8 @@
 body {
     font-family: "Inter", sans-serif;
     background-color: var(--Off-white);
-    padding: 4rem 9rem;
-    max-height: 100vh;
+    padding: 5rem 10rem;
+    min-height: 100vh;
     /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
@@ -90,16 +90,11 @@ body {
 .main-container {
     width: 100%;
     display: grid;
-    grid-template-rows: 350px 170px 250px;
-    grid-template-columns: 350px 400px 345px;
+    grid-template-rows: 330px 170px 20px 250px;
+    grid-template-columns: 350px 380px auto;
     gap: 1.7rem;
 }
 
-.main-container>h1 {
-    font-size: 3.8rem;
-    font-weight: 800;
-    line-height: 4rem;
-}
 
 /* Should be all of the layout for the divs. Now i must adjust the rows and columns */
 .main-pic {
@@ -110,6 +105,10 @@ body {
 
 .future {
     grid-area: 2 / 1 / 3 / 2;
+    font-size: 3.7rem;
+    font-weight: 800;
+    line-height: 3.7rem;
+    height: fit-content;
 }
 
 .info-more {
@@ -169,15 +168,20 @@ body {
 
 /* display flex and inner div is column for these 3 */
 .retro {
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 4 / 1 / 5 / 2;
+    display: flex;
 }
 
 .laptops {
-    grid-area: 3 / 2 / 4 / 3;
+    grid-area: 4 / 2 / 5 / 3;
+    display: flex;
+
 }
 
 .game {
-    grid-area: 3 / 3 / 4 / 4;
+    grid-area: 4 / 3 / 5 / 4;
+    display: flex;
+
 }
 
 
