@@ -269,6 +269,8 @@ body {
         flex-direction: column;
         gap: 0;
     }
+
+    /* must start working in everything else */
 }
 
 .hidden {
