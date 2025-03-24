@@ -194,16 +194,41 @@ body {
     display: flex;
 }
 
+.one > h4 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.one > h4:hover {
+    color: var(--Soft-red);
+}
+
 .laptops {
     grid-area: 4 / 2 / 5 / 3;
     display: flex;
+}
 
+.two > h4 {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.two > h4:hover {
+    color: var(--Soft-red);
 }
 
 .game {
     grid-area: 4 / 3 / 5 / 4;
     display: flex;
+}
 
+.three > h4 {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.three > h4:hover {
+    color: var(--Soft-red);
 }
 
 
