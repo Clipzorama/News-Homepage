@@ -168,6 +168,8 @@ body {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .new-info>p {
@@ -175,6 +177,10 @@ body {
     margin-bottom: 2rem;
     font-size: 0.9rem;
     line-height: 1.4rem;
+}
+
+.new-info>h4:hover {
+    color: var(--Soft-orange);
 }
 
 .new-info>hr {
