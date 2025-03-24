@@ -126,6 +126,7 @@ body {
     font-size: 1rem;
     line-height: 1.7rem;
     font-weight: 400;
+    margin-bottom: 2rem;
 }
 
 .info-more>button {
@@ -191,7 +192,15 @@ body {
 /* display flex and inner div is column for these 3 */
 .retro {
     grid-area: 4 / 1 / 5 / 2;
+    margin-top: 1.5rem;
     display: flex;
+
+
+}
+
+.retro > img {
+    width: 10rem;
+    height: 10rem;
 }
 
 .one > h4 {
@@ -208,6 +217,11 @@ body {
     display: flex;
 }
 
+.laptops > img {
+    width: 10rem;
+    height: 10rem;
+}
+
 .two > h4 {
     transition: 0.3s;
     cursor: pointer;
@@ -220,6 +234,12 @@ body {
 .game {
     grid-area: 4 / 3 / 5 / 4;
     display: flex;
+
+}
+
+.game > img {
+    width: 10rem;
+    height: 10rem;
 }
 
 .three > h4 {
