@@ -31,7 +31,7 @@ body {
     background-color: var(--Off-white);
     padding: 5rem 9rem;
     min-height: 100vh;
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    transition: 0.3s;
 }
 
 .navbar {
@@ -116,7 +116,6 @@ body {
     font-size: 3.7rem;
     font-weight: 800;
     line-height: 3.7rem;
-    height: fit-content;
 }
 
 .info-more {
@@ -331,7 +330,7 @@ body {
         height: 100%;
         right: -1000px;
         top: 0;
-        z-index: 2;
+        z-index: 1999;
         opacity: 1;
         transition: 0.5s all ease;
 
@@ -370,7 +369,7 @@ body {
         height: 40px;
         align-self: flex-end;
         margin-right: 1rem;
-        z-index: 2;
+        z-index: 3000;
         transition: 0.5s ease ease-in-out;
 
     }
@@ -390,13 +389,87 @@ body {
     }
 
     .future {
-        font-size: 3rem;
-        line-height: 3rem;
+        margin-top: 1.5rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        padding-right: 2rem;
     }
+
+    .info-more>p {
+        padding-right: 0;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: .95rem;
+    }
+
+    .info-more>button {
+        font-size: .7rem;
+    }
+
+    .new-info {
+        margin-top: 4rem;
+    }
+
+    .retro {
+        margin-top: 3.5rem;
+    }
+
+    .one > h3 {
+        font-size: 2rem;
+    }
+
+    .two > h3 {
+        font-size: 2rem;
+    }
+
+    .three > h3 {
+        font-size: 2rem;
+    }
+
+    .one > h4 {
+        font-size: 1rem;
+    }
+
+    .two > h4 {
+        font-size: 1rem;
+    }
+
+    .three > h4 {
+        font-size: 1rem;
+    }
+
+
+    .one > p {
+        font-size: 0.85rem;
+    }
+
+    .two > p {
+        font-size: 0.85rem;
+    }
+
+    .three > p {
+        font-size: 0.85rem;
+    }
+
+    
+
 
     /* must start working in everything else */
 }
 
 .hidden {
     display: none;
+}
+
+.dimmed {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency here */
+    z-index: 999;
+    cursor: pointer;
+    mix-blend-mode: color;
 }
