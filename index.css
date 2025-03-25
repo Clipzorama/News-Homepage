@@ -351,7 +351,6 @@ body {
 
     .nav-container.active {
         right: 0;
-        top: 0;
     }
 
     .bar {
@@ -467,11 +466,11 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
     z-index: 998; /* Lower than navC */
     cursor: pointer;
-    /* mix-blend-mode: color; */
+    mix-blend-mode: color;
 }
 
 .pop {
-    background-color: red;
+    background-color: var(--Off-white);
     position: relative;
-    z-index: 999; /* Ensures it's above the dimmed overlay */
+    z-index: 2999; /* Ensures it's above the dimmed overlay */
 }
