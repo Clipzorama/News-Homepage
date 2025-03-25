@@ -29,7 +29,7 @@
 body {
     font-family: "Inter", sans-serif;
     background-color: var(--Off-white);
-    padding: 5rem 10rem;
+    padding: 5rem 9rem;
     min-height: 100vh;
     /* background-color: rgba(0, 0, 0, 0.5); */
 }
@@ -90,7 +90,7 @@ body {
 .main-container {
     width: 100%;
     display: grid;
-    grid-template-rows: 310px 160px 20px 250px;
+    grid-template-rows: 310px 160px 20px auto;
     grid-template-columns: 350px 380px auto;
     gap: 1.7rem;
 }
@@ -194,7 +194,7 @@ body {
     grid-area: 4 / 1 / 5 / 2;
     margin-top: 1.5rem;
     display: flex;
-
+    gap: 1.5rem;
 
 }
 
@@ -203,18 +203,37 @@ body {
     height: 10rem;
 }
 
+.one > h3 {
+    color: var(--Soft-red);
+    font-size: 2.4rem;
+}
+
 .one > h4 {
+    margin-top: .5rem;
     cursor: pointer;
     transition: 0.3s;
+    color: var(--Very-dark-blue);
+    font-size: 1.15rem;
+    font-weight: 800;
 }
 
 .one > h4:hover {
     color: var(--Soft-red);
+
+}
+
+.one > p {
+    margin-top: .5rem;
+    color: var(--Dark-grayish-blue);
+    font-size: .9rem;
+    line-height: 1.5rem;
 }
 
 .laptops {
     grid-area: 4 / 2 / 5 / 3;
     display: flex;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
 }
 
 .laptops > img {
@@ -222,19 +241,36 @@ body {
     height: 10rem;
 }
 
+.two > h3 {
+    color: var(--Soft-red);
+    font-size: 2.4rem;
+}
+
 .two > h4 {
+    margin-top: .5rem;
     transition: 0.3s;
     cursor: pointer;
+    color: var(--Very-dark-blue);
+    font-size: 1.15rem;
+    font-weight: 800;
 }
 
 .two > h4:hover {
     color: var(--Soft-red);
 }
 
+.two > p {
+    margin-top: .5rem;
+    color: var(--Dark-grayish-blue);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
 .game {
     grid-area: 4 / 3 / 5 / 4;
     display: flex;
-
+    margin-top: 1.5rem;
+    gap: 1.5rem;
 }
 
 .game > img {
@@ -242,13 +278,29 @@ body {
     height: 10rem;
 }
 
+.three > h3 {
+    color: var(--Soft-red);
+    font-size: 2.4rem;
+}
+
 .three > h4 {
+    margin-top: .5rem;
     transition: 0.3s;
     cursor: pointer;
+    color: var(--Very-dark-blue);
+    font-size: 1.15rem;
+    font-weight: 800;
 }
 
 .three > h4:hover {
     color: var(--Soft-red);
+}
+
+.three > p {
+    margin-top: .5rem;
+    color: var(--Dark-grayish-blue);
+    font-size: .9rem;
+    line-height: 1.5rem;
 }
 
 
