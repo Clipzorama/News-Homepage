@@ -458,26 +458,6 @@ body {
     display: none;
 }
 
-.dimmed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Adjust transparency */
-    z-index: 998;
-    /* Lower than navC */
-    cursor: pointer;
-    mix-blend-mode: color;
-}
-
-.pop {
-    background-color: var(--Off-white);
-    position: relative;
-    z-index: 2999;
-    /* Ensures it's above the dimmed overlay */
-}
-
 .overlay {
     position: fixed;
     top: 0;
@@ -485,11 +465,10 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent dark background */
     z-index: 1000;
     /* Make sure it's above everything except nav */
     display: none;
-    /* Hide it by default */
+    /* Dom manipulation */
 }
 
 .overlay.active {
