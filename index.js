@@ -8,12 +8,12 @@ hBar.addEventListener("click", () => {
     hBar.classList.add("hidden");
     navC.classList.add("active");
     closeBar.classList.remove("hidden");
-    overlay.classList.add("active"); // Show overlay
+    overlay.classList.add("active");
 });
 
 closeBar.addEventListener("click", () => {
     hBar.classList.remove("hidden");
     navC.classList.remove("active");
     closeBar.classList.add("hidden");
-    overlay.classList.remove("active"); // Hide overlay
+    overlay.classList.remove("active");
 });
