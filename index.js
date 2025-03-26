@@ -2,21 +2,18 @@
 let navC = document.querySelector(".nav-container");
 let hBar = document.querySelector(".bar");
 let closeBar = document.querySelector(".close-bar");
-
-
+let overlay = document.querySelector(".overlay");
 
 hBar.addEventListener("click", () => {
     hBar.classList.add("hidden");
     navC.classList.add("active");
     closeBar.classList.remove("hidden");
-    document.body.classList.add("dimmed");
-
+    overlay.classList.add("active"); // Show overlay
 });
 
 closeBar.addEventListener("click", () => {
     hBar.classList.remove("hidden");
     navC.classList.remove("active");
     closeBar.classList.add("hidden");
-    document.body.classList.remove("dimmed");
-
-})
+    overlay.classList.remove("active"); // Hide overlay
+});
