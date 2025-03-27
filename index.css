@@ -468,6 +468,7 @@ body {
     z-index: 1000;
     /* Make sure it's above everything except nav */
     display: none;
+    transition: all 0.3s;
     /* Dom manipulation */
 }
 
